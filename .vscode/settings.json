@@ -1,0 +1,5 @@
+{
+  "cSpell.words": ["siwe", "wagmi", "connectkit"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}

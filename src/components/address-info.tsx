@@ -10,12 +10,12 @@ const getServerSession = async () => {
   return session
 }
 
-export default async function Page() {
+export  const AddressInfo = async  () =>  {
   const { address } = await getServerSession()
   return (
-    <div className="container">
+    <>
       address: {address}
-      {address ? '✅ has SignIn' : '❌ not SignIn'}
-    </div>
+      {address ? '✅ has Login' : '❌ not Login'}
+    </>
   )
 }

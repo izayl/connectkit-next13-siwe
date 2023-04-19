@@ -1,4 +1,6 @@
+import Providers from '@/components/providers'
 import './globals.css'
+import { ConnectWallet } from '@/components/connect-wallet'
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,8 +13,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <Providers>
+          <header>
+            <ConnectWallet />
+          </header>
+          <main>{children}</main>
+        </Providers>
+      </body>
     </html>
   )
 }
